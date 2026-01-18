@@ -1,0 +1,57 @@
+:host {
+  .to-do-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    .task-input {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    .add-task-button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      &:hover {
+        background-color: #218838;
+      }
+    }
+  }
+  .list-section {
+    background-color: gray;
+    padding: 20px;
+    border-radius: 8px;
+    .item-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      padding: 10px;
+      .item {
+        font-size: 12px;
+        color: white;
+      }
+      .delete-button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<div class="to-do-container mt-5">
+  <div class="to-do-input-section d-flex gap-5 
+  items-center">
+    <input
+      type="text"
+      id="task-input"
+      [(ngModel)]="inputText"
+      class="task-input"
+      placeholder="Enter Task"
+    />
+    <button type="button" class="add-task-button" (click)="addTask()">Add Task</button>
+  </div>
+  @if (toDoItems.length) {
+  <div class="list-section mt-5">
+   @for( item of toDoItems; track $index;) {
+    <div class="item-list">
+        <span class="item">{{item}}</span>
+        <button type="button" class="delete-button" (click)="deleteTask($index)">Delete</button>
+    </div>
+   }
+  </div>
+  }
+</div>
